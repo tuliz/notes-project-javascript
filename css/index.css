@@ -1,0 +1,122 @@
+@font-face{
+    font-family: josefin ;
+    src: url("../fonts/ComforterBrush-Regular.ttf");
+}
+
+body{
+    background-image: url(../images/tile.jpg);
+}
+
+
+h1{
+    font-family: josefin ;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+label{
+    font-weight: 700;
+}
+/*
+#saveTask{
+    position: absolute;
+    right: 35%;
+    top: 30%;
+    margin-right: 20px;
+    
+}
+
+#resetTask{
+    position: absolute;
+    right:32%;
+    top:30%;
+}
+*/
+
+
+textarea{
+    background-color: transparent;
+    font-size: 30px;
+    border-style: none;
+}
+
+#formContainer{
+    position: relative;
+}
+
+form{
+    background-image: url("../images/formbg.jpg");
+    width: 55%;
+}
+
+#notesContainer{
+    margin-top: 30px;
+}
+
+.noteContainer{
+    background-image: url("../images/notebg.png");
+     background-repeat: no-repeat;
+     position: relative;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     width: 200px;
+
+}
+
+
+.noteContainer img{
+    visibility: hidden;
+    object-fit: contain;      
+}
+
+.fas{
+    visibility: hidden;
+    position: absolute;
+    top:7%;
+    right:15%;    
+}
+
+.fas:hover{
+    cursor: pointer;
+}
+
+#time, #date{
+    position: absolute;
+    left:5%;
+    font-weight: 500;
+}
+
+.content{
+    position: absolute;
+    max-width: 150px;
+    max-height: 150px;
+    left: 5%;
+    top:10%;
+}
+
+#time{
+    bottom: 10%;
+}
+
+#date{
+    bottom: 16%;
+}
+
+
+.newTask{
+        animation-duration: 2s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+         
+        }
+      
+        to {
+          margin-left: 0%;
+        }
+      }
